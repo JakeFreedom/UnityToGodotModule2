@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://cjkvnsequ5ayx"]
+[gd_scene load_steps=13 format=3 uid="uid://cjkvnsequ5ayx"]
 
 [ext_resource type="Script" uid="uid://bv7jeeyd4agtp" path="res://Scenes/Main.cs" id="1_6bp64"]
 [ext_resource type="PackedScene" uid="uid://bpuknqcpgwvh8" path="res://Scenes/world.tscn" id="2_0xm2m"]
@@ -8,7 +8,6 @@
 [ext_resource type="PackedScene" uid="uid://deekvmn50p1dc" path="res://Scenes/CoinDrop2.tscn" id="6_344ge"]
 [ext_resource type="PackedScene" uid="uid://cpccjpoq1we0v" path="res://Scenes/CoinDrop3.tscn" id="7_ynf5e"]
 [ext_resource type="PackedScene" uid="uid://de3ta1n6iidy3" path="res://Scenes/UX.tscn" id="9_ynf5e"]
-[ext_resource type="PackedScene" uid="uid://wi64eckmfcub" path="res://Scenes/character_body_3d.scn" id="10_d1ilt"]
 [ext_resource type="AudioStream" uid="uid://bir02s6jjuig0" path="res://Assets/Music/good_b_music-upbeat-uplifting-happy-pop-corporate-long-10629.mp3" id="10_hptm8"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ig7tw"]
@@ -24,34 +23,32 @@ sky = SubResource("Sky_0xm2m")
 tonemap_mode = 2
 glow_enabled = true
 
-[node name="Node3D" type="Node3D" unique_id=650104597]
+[node name="Node3D" type="Node3D"]
 script = ExtResource("1_6bp64")
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=686004720]
-transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 4.959587, 0)
 shadow_enabled = true
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=47435678]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_h2yge")
 
-[node name="Camera3D" type="Camera3D" parent="." unique_id=40577558]
+[node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.5297269, 0.8481683, 0, -0.8481683, 0.5297269, 0, 8.129835, 8.275181)
 
-[node name="World" parent="." unique_id=143468411 instance=ExtResource("2_0xm2m")]
+[node name="World" parent="." instance=ExtResource("2_0xm2m")]
 
-[node name="ObjectSpawner" parent="." unique_id=94369978 instance=ExtResource("3_h2yge")]
+[node name="ObjectSpawner" parent="." instance=ExtResource("3_h2yge")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8988209, 0)
 objectToSpawn = Array[PackedScene]([ExtResource("5_21xkr"), ExtResource("6_344ge"), ExtResource("7_ynf5e")])
 
-[node name="catchem3dPlayArea" parent="." unique_id=76671866 instance=ExtResource("4_1bvp3")]
+[node name="catchem3dPlayArea" parent="." instance=ExtResource("4_1bvp3")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 
-[node name="UX" parent="." unique_id=1423101655 instance=ExtResource("9_ynf5e")]
+[node name="UX" parent="." instance=ExtResource("9_ynf5e")]
 
-[node name="BackGroundMusic" type="AudioStreamPlayer3D" parent="." unique_id=249022345]
+[node name="BackGroundMusic" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.9544039, 0)
 stream = ExtResource("10_hptm8")
 volume_db = -10.0
 autoplay = true
-
-[node name="CharacterBody3D" parent="." unique_id=731087067 instance=ExtResource("10_d1ilt")]
-speedBoost = 1.555
