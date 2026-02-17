@@ -22,9 +22,9 @@ public partial class Main : Node2D
 	{
 	}
 
-	private void ChangeScore() {
+	private void ChangeScore(int scoreToAdd) {
 
-		playerScore += 1;
+		playerScore += scoreToAdd;
 		score.Text = playerScore.ToString();
 
 	}

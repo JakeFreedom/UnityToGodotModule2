@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cfibw2ewqh6j3" path="res://Obstacles.cs" id="1_g48ay"]
 [ext_resource type="Texture2D" uid="uid://bavudbg5y1cb2" path="res://Assests/Obstable64x64.png" id="2_v3q82"]
+[ext_resource type="AudioStream" uid="uid://dw35s6o433jts" path="res://Assests/ObstacleCollision.mp3" id="3_v3q82"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_hlxs5"]
 friction = 0.78
@@ -46,3 +47,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="RotationPoint" type="Node2D" parent="." unique_id=2076030397]
+
+[node name="CollisionPlayer" type="AudioStreamPlayer2D" parent="." unique_id=1779946094]
+stream = ExtResource("3_v3q82")
+volume_db = -5.0

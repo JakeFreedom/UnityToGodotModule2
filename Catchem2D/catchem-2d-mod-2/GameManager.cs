@@ -39,30 +39,12 @@ public partial class GameManager : Node3D
             //Make 5 random spawnpoints
             Vector2 spawnPoint = new Vector2(rng.RandiRange(150, (int)screenSize.X), rng.RandiRange(150, (int)screenSize.Y));
             //We only want to add the new spawn point to the list if it's not over lapping... Sprite is 64x64
-            //By doing this we have to loop the list
-            //foreach(Vector2 goodPoints in spawnPoints)
-            //{
-            //    GD.Print($"Good Point: {goodPoints.X},{goodPoints.Y}");
-            //    GD.Print($"Spawn Point:{spawnPoint.X}, {spawnPoint.Y}");
-            //    if (spawnPoint.X == goodPoints.X || spawnPoint.X <= goodPoints.X + 64)
-            //    {
-            //        spawnPoint = new Vector2(rng.RandiRange(150, (int)screenSize.X), rng.RandiRange(150, (int)screenSize.Y));
-            //        continue;
-            //    }
-            //    else
-            //    {
-            //        spawnPoints.Add(spawnPoint);
-            //        break;
-            //    }
-            //}
-            
             while (checkForOverLap)
             {
                 if (CheckForOverLap(spawnPoint, spawnPoints))
                 {
                     //gen a new spawn point
                     spawnPoint = new Vector2(rng.RandiRange(150, (int)screenSize.X), rng.RandiRange(150, (int)screenSize.Y));
-                    GD.Print("Gen a new spawn point");
                 }
                 else
                 {
@@ -97,25 +79,18 @@ public partial class GameManager : Node3D
     /// <param name="spawnPoints"></param>
     /// <returns></returns>
     private bool CheckForOverLap(Vector2 spawnPoint, List<Vector2> spawnPoints) {
-        bool returnValue = false;
         foreach (Vector2 goodPoints in spawnPoints)
         {
-            GD.Print($"Good Point: {goodPoints.X},{goodPoints.Y}");
-            GD.Print($"Spawn Point:{spawnPoint.X}, {spawnPoint.Y}");
+            //GD.Print($"Good Point: {goodPoints.X},{goodPoints.Y}");
+            //GD.Print($"Spawn Point:{spawnPoint.X}, {spawnPoint.Y}");
             if (spawnPoint.X >= goodPoints.X && spawnPoint.X+64 <= goodPoints.X + 64)
-            {
-                //spawnPoint = new Vector2(rng.RandiRange(150, (int)GetViewport().GetVisibleRect().Size.X), rng.RandiRange(150, (int)GetViewport().GetVisibleRect().Size.Y));
                 return true;
-            }
             else
-            {
-                //spawnPoints.Add(spawnPoint);
-                returnValue =  false;
-                break;
-            }
-        }
+                return  false;
 
-        return returnValue;
+        }
+            //If something goes wrong we will error on the side that there is overlap and return true.
+            return false;
     }
     private void GenerateColor(Obstacles obj) {
         obj.color = new Vector3(rng.RandfRange(0, 1), rng.RandfRange(0, 1), rng.RandfRange(0, 1));

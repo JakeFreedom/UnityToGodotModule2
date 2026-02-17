@@ -1,4 +1,4 @@
-using Godot;
+	using Godot;
 using System;
 
 public partial class Obstacles : StaticBody2D
@@ -7,6 +7,7 @@ public partial class Obstacles : StaticBody2D
 
 	private int HitCount = 0;
 	private Label hitCountLabel;
+	private AudioStreamPlayer2D collisionPlayer;
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
@@ -15,7 +16,7 @@ public partial class Obstacles : StaticBody2D
 		hitCountLabel = GetNode<Label>("HitCount");
 		hitCountLabel.Text = HitCount.ToString();
 		//hitCountLabel.Rotation = GlobalRotationDegrees - 90	;
-
+		collisionPlayer = GetNode<AudioStreamPlayer2D>("CollisionPlayer");
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -24,5 +25,13 @@ public partial class Obstacles : StaticBody2D
 	}
 
 
-	private void AreaEnteredHandler(Area2D otherArea) { HitCount++;  hitCountLabel.Text = HitCount.ToString(); }
+	private void AreaEnteredHandler(Area2D otherArea)
+	{
+		HitCount++; hitCountLabel.Text = HitCount.ToString();
+		if (otherArea.Owner.IsInGroup("Ball"))
+		{
+			collisionPlayer.PitchScale = .1f;
+			collisionPlayer.Play();
+		}
+	}
 }

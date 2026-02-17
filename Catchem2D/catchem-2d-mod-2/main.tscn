@@ -52,6 +52,8 @@ shape = SubResource("RectangleShape2D_lquwl")
 [node name="ObjectSpawner" parent="." unique_id=291370732 instance=ExtResource("2_h2yge")]
 position = Vector2(-2, 0)
 spawnLocations = 15
+spawnedObjectThresholdForBurst = 25
+objectsToBurstSpawn = 15
 
 [node name="ObjectDeSpawner" parent="." unique_id=567913549 instance=ExtResource("4_1bvp3")]
 position = Vector2(960, 1113)

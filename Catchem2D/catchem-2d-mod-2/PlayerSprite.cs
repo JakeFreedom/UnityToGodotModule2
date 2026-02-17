@@ -9,7 +9,7 @@ public partial class PlayerSprite : CharacterBody2D
 	public float BoostSpeed = 4000.0f;
 
 	[Signal]
-	public delegate void ItemCaughtEventHandler();
+	public delegate void ItemCaughtEventHandler(int score);
     public override void _Ready()
     {
 		GetNode<Area2D>("Area2D").AreaEntered += ObjectEntered;
@@ -43,9 +43,10 @@ public partial class PlayerSprite : CharacterBody2D
 		MoveAndSlide();
 	}
 
-	private void ObjectEntered(Node2D otherObject)
+	private void ObjectEntered(Area2D otherObject)
 	{
-		EmitSignal(SignalName.ItemCaught);
+		GD.Print(((DroppedObject)otherObject.Owner).ballHealth);
+		EmitSignal(SignalName.ItemCaught, ((DroppedObject)otherObject.Owner).ballHealth+1);
 		otherObject.Owner.QueueFree();
 	}
 }
