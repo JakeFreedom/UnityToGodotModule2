@@ -23,6 +23,7 @@ script = ExtResource("1_lquwl")
 score = NodePath("CanvasLayer/HBoxContainer/PlayerScore")
 
 [node name="GameManager" parent="." unique_id=1736357419 instance=ExtResource("6_7mycd")]
+obstaclesToSpawn = 15
 
 [node name="Player" parent="." unique_id=1938720793 instance=ExtResource("1_ig7tw")]
 position = Vector2(654, 678)

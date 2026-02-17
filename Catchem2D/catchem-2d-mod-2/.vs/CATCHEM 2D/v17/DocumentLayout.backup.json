@@ -1,37 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "F:\\Repos\\UnityToGodotModule2\\Catchem2D\\catchem-2d-mod-2\\",
+  "WorkspaceRootPath": "D:\\Repos\\UnityToGodotModule2\\Catchem2D\\catchem-2d-mod-2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D90C34B9-40ED-49FF-8498-63C4060974B4}|Catchem 2D.csproj|f:\\repos\\unitytogodotmodule2\\catchem2d\\catchem-2d-mod-2\\objectspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D90C34B9-40ED-49FF-8498-63C4060974B4}|Catchem 2D.csproj|solutionrelative:objectspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D90C34B9-40ED-49FF-8498-63C4060974B4}|Catchem 2D.csproj|d:\\repos\\unitytogodotmodule2\\catchem2d\\catchem-2d-mod-2\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D90C34B9-40ED-49FF-8498-63C4060974B4}|Catchem 2D.csproj|solutionrelative:gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D90C34B9-40ED-49FF-8498-63C4060974B4}|Catchem 2D.csproj|f:\\repos\\unitytogodotmodule2\\catchem2d\\catchem-2d-mod-2\\obstacles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D90C34B9-40ED-49FF-8498-63C4060974B4}|Catchem 2D.csproj|d:\\repos\\unitytogodotmodule2\\catchem2d\\catchem-2d-mod-2\\obstacles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D90C34B9-40ED-49FF-8498-63C4060974B4}|Catchem 2D.csproj|solutionrelative:obstacles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D90C34B9-40ED-49FF-8498-63C4060974B4}|Catchem 2D.csproj|f:\\repos\\unitytogodotmodule2\\catchem2d\\catchem-2d-mod-2\\droppedobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D90C34B9-40ED-49FF-8498-63C4060974B4}|Catchem 2D.csproj|d:\\repos\\unitytogodotmodule2\\catchem2d\\catchem-2d-mod-2\\objectspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D90C34B9-40ED-49FF-8498-63C4060974B4}|Catchem 2D.csproj|solutionrelative:objectspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90C34B9-40ED-49FF-8498-63C4060974B4}|Catchem 2D.csproj|d:\\repos\\unitytogodotmodule2\\catchem2d\\catchem-2d-mod-2\\droppedobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D90C34B9-40ED-49FF-8498-63C4060974B4}|Catchem 2D.csproj|solutionrelative:droppedobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Repos\\UnityToGodotModule2\\Catchem2D\\catchem-2d-mod-2\\GameManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GameManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D90C34B9-40ED-49FF-8498-63C4060974B4}|Catchem 2D.csproj|f:\\repos\\unitytogodotmodule2\\catchem2d\\catchem-2d-mod-2\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D90C34B9-40ED-49FF-8498-63C4060974B4}|Catchem 2D.csproj|d:\\repos\\unitytogodotmodule2\\catchem2d\\catchem-2d-mod-2\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D90C34B9-40ED-49FF-8498-63C4060974B4}|Catchem 2D.csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D90C34B9-40ED-49FF-8498-63C4060974B4}|Catchem 2D.csproj|f:\\repos\\unitytogodotmodule2\\catchem2d\\catchem-2d-mod-2\\objdespawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D90C34B9-40ED-49FF-8498-63C4060974B4}|Catchem 2D.csproj|d:\\repos\\unitytogodotmodule2\\catchem2d\\catchem-2d-mod-2\\objdespawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D90C34B9-40ED-49FF-8498-63C4060974B4}|Catchem 2D.csproj|solutionrelative:objdespawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D90C34B9-40ED-49FF-8498-63C4060974B4}|Catchem 2D.csproj|f:\\repos\\unitytogodotmodule2\\catchem2d\\catchem-2d-mod-2\\playersprite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D90C34B9-40ED-49FF-8498-63C4060974B4}|Catchem 2D.csproj|d:\\repos\\unitytogodotmodule2\\catchem2d\\catchem-2d-mod-2\\playersprite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D90C34B9-40ED-49FF-8498-63C4060974B4}|Catchem 2D.csproj|solutionrelative:playersprite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D90C34B9-40ED-49FF-8498-63C4060974B4}|Catchem 2D.csproj|f:\\repos\\unitytogodotmodule2\\catchem2d\\catchem-2d-mod-2\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D90C34B9-40ED-49FF-8498-63C4060974B4}|Catchem 2D.csproj|d:\\repos\\unitytogodotmodule2\\catchem2d\\catchem-2d-mod-2\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D90C34B9-40ED-49FF-8498-63C4060974B4}|Catchem 2D.csproj|solutionrelative:player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -42,17 +42,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "GameManager.cs",
-              "DocumentMoniker": "F:\\Repos\\UnityToGodotModule2\\Catchem2D\\catchem-2d-mod-2\\GameManager.cs",
+              "DocumentMoniker": "D:\\Repos\\UnityToGodotModule2\\Catchem2D\\catchem-2d-mod-2\\GameManager.cs",
               "RelativeDocumentMoniker": "GameManager.cs",
-              "ToolTip": "F:\\Repos\\UnityToGodotModule2\\Catchem2D\\catchem-2d-mod-2\\GameManager.cs",
+              "ToolTip": "D:\\Repos\\UnityToGodotModule2\\Catchem2D\\catchem-2d-mod-2\\GameManager.cs",
               "RelativeToolTip": "GameManager.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAwwC8AAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAYwH0AAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-14T21:39:39.398Z",
               "EditorCaption": ""
@@ -61,11 +61,11 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Obstacles.cs",
-              "DocumentMoniker": "F:\\Repos\\UnityToGodotModule2\\Catchem2D\\catchem-2d-mod-2\\Obstacles.cs",
+              "DocumentMoniker": "D:\\Repos\\UnityToGodotModule2\\Catchem2D\\catchem-2d-mod-2\\Obstacles.cs",
               "RelativeDocumentMoniker": "Obstacles.cs",
-              "ToolTip": "F:\\Repos\\UnityToGodotModule2\\Catchem2D\\catchem-2d-mod-2\\Obstacles.cs",
+              "ToolTip": "D:\\Repos\\UnityToGodotModule2\\Catchem2D\\catchem-2d-mod-2\\Obstacles.cs",
               "RelativeToolTip": "Obstacles.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-14T21:24:21.335Z",
               "EditorCaption": ""
@@ -74,48 +74,45 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Main.cs",
-              "DocumentMoniker": "F:\\Repos\\UnityToGodotModule2\\Catchem2D\\catchem-2d-mod-2\\Main.cs",
+              "DocumentMoniker": "D:\\Repos\\UnityToGodotModule2\\Catchem2D\\catchem-2d-mod-2\\Main.cs",
               "RelativeDocumentMoniker": "Main.cs",
-              "ToolTip": "F:\\Repos\\UnityToGodotModule2\\Catchem2D\\catchem-2d-mod-2\\Main.cs",
+              "ToolTip": "D:\\Repos\\UnityToGodotModule2\\Catchem2D\\catchem-2d-mod-2\\Main.cs",
               "RelativeToolTip": "Main.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T16:26:36.729Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-05T16:26:36.729Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "objDespawner.cs",
-              "DocumentMoniker": "F:\\Repos\\UnityToGodotModule2\\Catchem2D\\catchem-2d-mod-2\\objDespawner.cs",
+              "DocumentMoniker": "D:\\Repos\\UnityToGodotModule2\\Catchem2D\\catchem-2d-mod-2\\objDespawner.cs",
               "RelativeDocumentMoniker": "objDespawner.cs",
-              "ToolTip": "F:\\Repos\\UnityToGodotModule2\\Catchem2D\\catchem-2d-mod-2\\objDespawner.cs",
+              "ToolTip": "D:\\Repos\\UnityToGodotModule2\\Catchem2D\\catchem-2d-mod-2\\objDespawner.cs",
               "RelativeToolTip": "objDespawner.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T16:00:10.102Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-05T16:00:10.102Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DroppedObject.cs",
+              "DocumentMoniker": "D:\\Repos\\UnityToGodotModule2\\Catchem2D\\catchem-2d-mod-2\\DroppedObject.cs",
+              "RelativeDocumentMoniker": "DroppedObject.cs",
+              "ToolTip": "D:\\Repos\\UnityToGodotModule2\\Catchem2D\\catchem-2d-mod-2\\DroppedObject.cs",
+              "RelativeToolTip": "DroppedObject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T03:09:21.27Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "DroppedObject.cs",
-              "DocumentMoniker": "F:\\Repos\\UnityToGodotModule2\\Catchem2D\\catchem-2d-mod-2\\DroppedObject.cs",
-              "RelativeDocumentMoniker": "DroppedObject.cs",
-              "ToolTip": "F:\\Repos\\UnityToGodotModule2\\Catchem2D\\catchem-2d-mod-2\\DroppedObject.cs",
-              "RelativeToolTip": "DroppedObject.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-04T03:09:21.27Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "ObjectSpawner.cs",
-              "DocumentMoniker": "F:\\Repos\\UnityToGodotModule2\\Catchem2D\\catchem-2d-mod-2\\ObjectSpawner.cs",
+              "DocumentMoniker": "D:\\Repos\\UnityToGodotModule2\\Catchem2D\\catchem-2d-mod-2\\ObjectSpawner.cs",
               "RelativeDocumentMoniker": "ObjectSpawner.cs",
-              "ToolTip": "F:\\Repos\\UnityToGodotModule2\\Catchem2D\\catchem-2d-mod-2\\ObjectSpawner.cs",
+              "ToolTip": "D:\\Repos\\UnityToGodotModule2\\Catchem2D\\catchem-2d-mod-2\\ObjectSpawner.cs",
               "RelativeToolTip": "ObjectSpawner.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAgwCQAAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -126,9 +123,9 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "PlayerSprite.cs",
-              "DocumentMoniker": "F:\\Repos\\UnityToGodotModule2\\Catchem2D\\catchem-2d-mod-2\\PlayerSprite.cs",
+              "DocumentMoniker": "D:\\Repos\\UnityToGodotModule2\\Catchem2D\\catchem-2d-mod-2\\PlayerSprite.cs",
               "RelativeDocumentMoniker": "PlayerSprite.cs",
-              "ToolTip": "F:\\Repos\\UnityToGodotModule2\\Catchem2D\\catchem-2d-mod-2\\PlayerSprite.cs",
+              "ToolTip": "D:\\Repos\\UnityToGodotModule2\\Catchem2D\\catchem-2d-mod-2\\PlayerSprite.cs",
               "RelativeToolTip": "PlayerSprite.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAQwDAAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -138,9 +135,9 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "Player.cs",
-              "DocumentMoniker": "F:\\Repos\\UnityToGodotModule2\\Catchem2D\\catchem-2d-mod-2\\Player.cs",
+              "DocumentMoniker": "D:\\Repos\\UnityToGodotModule2\\Catchem2D\\catchem-2d-mod-2\\Player.cs",
               "RelativeDocumentMoniker": "Player.cs",
-              "ToolTip": "F:\\Repos\\UnityToGodotModule2\\Catchem2D\\catchem-2d-mod-2\\Player.cs",
+              "ToolTip": "D:\\Repos\\UnityToGodotModule2\\Catchem2D\\catchem-2d-mod-2\\Player.cs",
               "RelativeToolTip": "Player.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

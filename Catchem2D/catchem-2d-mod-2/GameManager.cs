@@ -22,7 +22,7 @@ public partial class GameManager : Node3D
         //We don't really need a timer to do this.
         //You really need to start following the program and have everything laid on in writting before getting to any programming.
         spawnTimer = new Timer();
-        spawnTimer.WaitTime = spawnDelay;
+        spawnTimer.WaitTime = (spawnDelay == 0 ? 1 : spawnDelay);
         //We could use this timer to change the locations of the obstacles
 
         //But for now let's just spawn 5 random obstacles.
@@ -30,15 +30,53 @@ public partial class GameManager : Node3D
         Vector2 screenSize = GetViewport().GetVisibleRect().Size;
         screenSize.X -= 150;
         screenSize.Y -= 150;
-        GD.Print(screenSize);
+        
         List<Vector2> spawnPoints = new List<Vector2>();
-        for(int i = 0; i < obstaclesToSpawn; i++)
+        bool checkForOverLap = true;
+        for (int i = 0; i < obstaclesToSpawn; i++)
         {
+            checkForOverLap = true;
             //Make 5 random spawnpoints
             Vector2 spawnPoint = new Vector2(rng.RandiRange(150, (int)screenSize.X), rng.RandiRange(150, (int)screenSize.Y));
-            spawnPoints.Add(spawnPoint);
+            //We only want to add the new spawn point to the list if it's not over lapping... Sprite is 64x64
+            //By doing this we have to loop the list
+            //foreach(Vector2 goodPoints in spawnPoints)
+            //{
+            //    GD.Print($"Good Point: {goodPoints.X},{goodPoints.Y}");
+            //    GD.Print($"Spawn Point:{spawnPoint.X}, {spawnPoint.Y}");
+            //    if (spawnPoint.X == goodPoints.X || spawnPoint.X <= goodPoints.X + 64)
+            //    {
+            //        spawnPoint = new Vector2(rng.RandiRange(150, (int)screenSize.X), rng.RandiRange(150, (int)screenSize.Y));
+            //        continue;
+            //    }
+            //    else
+            //    {
+            //        spawnPoints.Add(spawnPoint);
+            //        break;
+            //    }
+            //}
+            
+            while (checkForOverLap)
+            {
+                if (CheckForOverLap(spawnPoint, spawnPoints))
+                {
+                    //gen a new spawn point
+                    spawnPoint = new Vector2(rng.RandiRange(150, (int)screenSize.X), rng.RandiRange(150, (int)screenSize.Y));
+                    GD.Print("Gen a new spawn point");
+                }
+                else
+                {
+                    checkForOverLap = false;
+                    spawnPoints.Add(spawnPoint);
+                }
+            }
+
+            if(spawnPoints.Count == 0) 
+                spawnPoints.Add(spawnPoint);
         }
 
+
+        //Add them to the scene
         foreach(Vector2 spawnPoint in spawnPoints)
         {
             Obstacles obstacle = obstacleScene.Instantiate<Obstacles>() as Obstacles;
@@ -52,13 +90,40 @@ public partial class GameManager : Node3D
 
     }
 
+    /// <summary>
+    /// returns true if there is overlap
+    /// </summary>
+    /// <param name="spawnPoint"></param>
+    /// <param name="spawnPoints"></param>
+    /// <returns></returns>
+    private bool CheckForOverLap(Vector2 spawnPoint, List<Vector2> spawnPoints) {
+        bool returnValue = false;
+        foreach (Vector2 goodPoints in spawnPoints)
+        {
+            GD.Print($"Good Point: {goodPoints.X},{goodPoints.Y}");
+            GD.Print($"Spawn Point:{spawnPoint.X}, {spawnPoint.Y}");
+            if (spawnPoint.X >= goodPoints.X && spawnPoint.X+64 <= goodPoints.X + 64)
+            {
+                //spawnPoint = new Vector2(rng.RandiRange(150, (int)GetViewport().GetVisibleRect().Size.X), rng.RandiRange(150, (int)GetViewport().GetVisibleRect().Size.Y));
+                return true;
+            }
+            else
+            {
+                //spawnPoints.Add(spawnPoint);
+                returnValue =  false;
+                break;
+            }
+        }
+
+        return returnValue;
+    }
     private void GenerateColor(Obstacles obj) {
         obj.color = new Vector3(rng.RandfRange(0, 1), rng.RandfRange(0, 1), rng.RandfRange(0, 1));
     
     }
     private void GiveRandomZRotation(Obstacles obj) {
 
-        obj.Rotate(Mathf.DegToRad(rng.RandiRange(1, 89)));
+        obj.Rotate(Mathf.DegToRad(rng.RandiRange(-15, 15)));
     
     }
 }
