@@ -7,7 +7,7 @@ public partial class Main : Node3D
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
-		GetNode<ControlPlayer>("CharacterBody3D").CollectableCaptured += CollectableCapturedHandler;
+		GetNode<ControlPlayer>("Player").CollectableCaptured += CollectableCapturedHandler;
 		userUX = GetNode<Ux>("UX");
 	}
 

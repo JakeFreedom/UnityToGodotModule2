@@ -15,18 +15,14 @@ public partial class ControlPlayer : CharacterBody3D
 
 
 	AnimationPlayer apWalking;
-    AnimationPlayer apIdle;
-	AnimationPlayer apWheelBarrowWalk;
 
 	AudioStreamPlayer3D caughtSoundEffect;
 
 	public float RotationSpeed = 3.0f;
     public override void _Ready()
     {
-		GetNode<WheelBarrowArea>("WheelBarrow/WheelBarrowArea").CollectableCaptured += CollectableCapturedHandler;
-		//apWalking = GetNode<AnimationPlayer>("Walking");
-		//apIdle = GetNode<AnimationPlayer>("Idle");
-		apWheelBarrowWalk = GetNode<AnimationPlayer>("WBWalk/AnimationPlayer");
+		GetNode<CatchBarrel>("Rig_Medium/Skeleton3D/Dummy_ArmRight/CatchBarrel").CollectableCaptured += CollectableCapturedHandler;
+		apWalking = GetNode<AnimationPlayer>("AnimationPlayer");
 		caughtSoundEffect = GetNode<AudioStreamPlayer3D>("Pop");
     }
 	public override void _PhysicsProcess(double delta)
@@ -67,14 +63,14 @@ public partial class ControlPlayer : CharacterBody3D
 
             }
 
-			apWheelBarrowWalk.Play("Walk");
-		
+			apWalking.Play("WalkingArmOpenInFront");
+
 		}
 		else
 		{
 			velocity.X = Mathf.MoveToward(Velocity.X, 0, Speed);
 			velocity.Z = Mathf.MoveToward(Velocity.Z, 0, Speed);
-			apWheelBarrowWalk.Stop();
+			apWalking.Stop();
 		}
 
 		Velocity = velocity;

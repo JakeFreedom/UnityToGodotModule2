@@ -41,7 +41,7 @@ _subresources={
 "animations": {
 "Armature|Armature|mixamo_com|Layer0_002": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://WheelBarrowIdle(7).res",
+"save_to_file/fallback_path": "res://Imported Animations/WheelBarrowIdle(7).res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://c5dljuxa2t2tt",
 "settings/loop_mode": 0,
@@ -2097,7 +2097,7 @@ _subresources={
 },
 "Armature|Armature|mixamo_com|Layer0_004": {
 "save_to_file/enabled": true,
-"save_to_file/fallback_path": "res://WheelBarrowTurnLeft(7).res",
+"save_to_file/fallback_path": "res://Imported Animations/WheelBarrowTurnLeft(7).res",
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "uid://bp23fhwyioqnl",
 "settings/loop_mode": 0,
