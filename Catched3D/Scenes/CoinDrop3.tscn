@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cpccjpoq1we0v"]
 
 [ext_resource type="ArrayMesh" uid="uid://dndn03aub3enk" path="res://Scenes/CoinDrop3.tres" id="1_6lx40"]
-[ext_resource type="Script" uid="uid://dmiit8j3etvuf" path="res://Scenes/CoinDrop3.cs" id="1_12oq0"]
+[ext_resource type="Script" uid="uid://dmiit8j3etvuf" path="res://Scripts/CoinDrop3.cs" id="1_12oq0"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_12oq0"]
 size = Vector3(1.1, 1.1, 1.1)

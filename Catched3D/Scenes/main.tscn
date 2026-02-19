@@ -10,6 +10,10 @@
 [ext_resource type="PackedScene" uid="uid://de3ta1n6iidy3" path="res://Scenes/UX.tscn" id="9_ynf5e"]
 [ext_resource type="PackedScene" uid="uid://ddf150bh4j77q" path="res://Scenes/Player/Player.tscn" id="10_d1ilt"]
 [ext_resource type="AudioStream" uid="uid://bir02s6jjuig0" path="res://Assets/Music/good_b_music-upbeat-uplifting-happy-pop-corporate-long-10629.mp3" id="10_hptm8"]
+[ext_resource type="PackedScene" uid="uid://vrxbld3dkjlj" path="res://Scenes/generic_drop.tscn" id="11_jkdf5"]
+[ext_resource type="ArrayMesh" uid="uid://bpcrnx42ewyhr" path="res://Scenes/CoinDrop1.tres" id="12_wsu2k"]
+[ext_resource type="ArrayMesh" uid="uid://diah6t0mglyr2" path="res://Scenes/Coin2.tres" id="13_k12tt"]
+[ext_resource type="ArrayMesh" uid="uid://dndn03aub3enk" path="res://Scenes/CoinDrop3.tres" id="14_h1bgf"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ig7tw"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -53,5 +57,7 @@ autoplay = true
 [node name="Player" parent="." unique_id=551277836 instance=ExtResource("10_d1ilt")]
 
 [node name="ObjectSpawner" parent="." unique_id=1198938642 instance=ExtResource("3_h2yge")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8988209, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, 0)
 objectToSpawn = Array[PackedScene]([ExtResource("5_21xkr"), ExtResource("6_344ge"), ExtResource("7_ynf5e")])
+genericDropScene = ExtResource("11_jkdf5")
+meshes = Array[Mesh]([ExtResource("12_wsu2k"), ExtResource("13_k12tt"), ExtResource("14_h1bgf")])

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://deekvmn50p1dc"]
 
-[ext_resource type="Script" uid="uid://cvdtoirneulap" path="res://Scenes/CoinDrop2.cs" id="1_6t0aa"]
+[ext_resource type="Script" uid="uid://cvdtoirneulap" path="res://Scripts/CoinDrop2.cs" id="1_6t0aa"]
 [ext_resource type="ArrayMesh" uid="uid://diah6t0mglyr2" path="res://Scenes/Coin2.tres" id="1_vhgue"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_vhgue"]

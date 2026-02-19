@@ -70,7 +70,6 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_8n0hv")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_gufwq"]
-size = Vector3(0.7, 0.7, 0.7)
 
 [node name="CatchBarrel" type="Node3D" unique_id=519537605]
 script = ExtResource("1_gufwq")

@@ -16,7 +16,7 @@ public partial class CoinDrop3 : Node3D
     // Called every frame. 'delta' is the elapsed time since the previous frame.
     public override void _Process(double delta)
     {
-        this.Position += new Vector3(0, -fallingSpeed * (float)delta, 0);
-        this.Rotation += new Vector3(0, (float)delta * rotationSpeed, 0);
+        //this.Position += new Vector3(0, -fallingSpeed * (float)delta, 0);
+        //this.Rotation += new Vector3(0, (float)delta * rotationSpeed, 0);
     }
 }
