@@ -19,14 +19,14 @@ height = 3.0
 script = ExtResource("1_tx58w")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=704487039]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.475147, 0)
 shape = SubResource("CapsuleShape3D_utyk3")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CollisionShape3D" unique_id=636925310]
 mesh = SubResource("CapsuleMesh_biduq")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1706520353]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.014713689, 1.8198907, -0.3923913)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.014713689, 2.438616, -0.3923913)
 script = ExtResource("2_biduq")
 BobFrequency = 5.0
 BobAmplitude = 0.4
@@ -45,8 +45,8 @@ camera = NodePath("../..")
 [node name="SpotLight3D" type="SpotLight3D" parent="Camera3D" unique_id=64453942]
 transform = Transform3D(0.9986295, -0.014299288, 0.050344743, 0, 0.96195143, 0.2732206, -0.052336056, -0.27284616, 0.9606331, 0.25027296, 0.8837793, 0.44050804)
 light_color = Color(0.32776362, 0.2037014, 0.07834964, 1)
-light_energy = 16.0
-spot_range = 7.0
+light_energy = 25.0
+spot_range = 10.0
 
 [node name="GunPointer" parent="Camera3D" unique_id=65630865 instance=ExtResource("4_305qu")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.072111495, 0, -2.089587)

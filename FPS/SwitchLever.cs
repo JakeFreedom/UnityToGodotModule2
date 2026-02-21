@@ -1,12 +1,18 @@
 using Godot;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 public partial class SwitchLever : Node3D
 {
-	[Export] Node3D light;
+	[Export] Node3D roomLights;
+
 	Area3D switchHitBox;
 	bool switchLocation = false;
 	AnimationPlayer switchPlayer;
+
+	List<SpotLight3D> lights;
+	Boolean turnLightsOn = false;
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
@@ -14,12 +20,25 @@ public partial class SwitchLever : Node3D
 		switchHitBox.AreaEntered += AreaEnteredHandler;
 		switchPlayer = GetNode<AnimationPlayer>("AnimationPlayer");
 
-		light.Visible = false;
+		lights = new List<SpotLight3D>();
+		if(roomLights != null)
+			FindRoomLights(roomLights);
+
 	}
 
+	float delayTime;
+	int lightIndex = 0;
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
+		delayTime += (float)delta;
+		if(turnLightsOn && lightIndex < 16)
+			if(delayTime>=1)
+			{
+				GD.Print("Turn a bank of lights on");
+				delayTime = 0;
+				lightIndex += 1;
+			}
 	}
 
 
@@ -29,14 +48,34 @@ public partial class SwitchLever : Node3D
 		{
 			switchPlayer.Play("TurnOn");
 			switchLocation = true;
-			light.Visible = true;
+			foreach (SpotLight3D light in lights)
+			{
+				light.Visible = true;
+				turnLightsOn = true;
+			}
+			
 		}
 		else
 		{
 			switchPlayer.Play("TurnOff");
 			switchLocation = false;
-			light.Visible = false;
+            
+			foreach (SpotLight3D light in lights)
+                light.Visible = false;        
 		}
 
+	}
+
+
+	private void FindRoomLights(Node3D node)
+	{
+		foreach(Node3D n in node.GetChildren())
+			FindRoomLights(n);
+
+		if (node.GetType() == typeof(SpotLight3D))
+		{
+			node.Visible = false;
+			lights.Add((SpotLight3D)node);
+		}
 	}
 }

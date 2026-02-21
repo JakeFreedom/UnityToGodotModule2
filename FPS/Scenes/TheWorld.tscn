@@ -26,6 +26,7 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_7fp03"]
 
 [sub_resource type="Environment" id="Environment_s26vl"]
+background_mode = 2
 reflected_light_source = 2
 tonemap_mode = 4
 tonemap_exposure = 1.33
@@ -39,6 +40,7 @@ glow_hdr_luminance_cap = 21.1
 
 [node name="Roof" parent="." unique_id=425177874 instance=ExtResource("10_neh8f")]
 transform = Transform3D(100, 0, 0, 0, 0.5, 0, 0, 0, 100, -6.849585, 8.622515, -3.9674413)
+visible = false
 
 [node name="Lights" type="Node3D" parent="Roof" unique_id=380277833]
 
@@ -46,6 +48,7 @@ transform = Transform3D(100, 0, 0, 0, 0.5, 0, 0, 0, 100, -6.849585, 8.622515, -3
 
 [node name="lever_wall_base_A_yellow2" parent="Room1" unique_id=2105539582 instance=ExtResource("7_7fp03")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -14.936097, 3.9309912, 0.83709025)
+visible = false
 
 [node name="Floors - Walls" type="Node3D" parent="Room1" unique_id=142596788]
 
@@ -274,9 +277,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 transform = Transform3D(-0.43301263, 0, 0.24999999, 0, 0.5, 0, -0.24999999, 0, -0.43301263, -13.75, 0, 0.75)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Room1/Room Lights/cannon_base_yellow2" unique_id=574366597]
-transform = Transform3D(-0.9942412, -0.08562869, -0.06443728, -0.0669874, 0.9659258, -0.25000003, 0.0836488, -0.24424385, -0.96609926, 0, 0, 0)
+transform = Transform3D(-0.9962891, -0.08562869, -0.0086976625, -0.08087266, 0.9659258, -0.2458596, 0.029453922, -0.24424383, -0.96926636, 0, 0, 0)
 light_color = Color(0.23172906, 0.17009303, 0.038893547, 1)
-light_energy = 12.258
+light_energy = 50.0
 shadow_enabled = true
 spot_range = 36.483
 spot_attenuation = 0.5
@@ -285,17 +288,17 @@ spot_attenuation = 0.5
 transform = Transform3D(0.4781524, -4.180141e-08, -0.1461858, -4.371139e-08, -0.5, 0, -0.1461858, 1.2779968e-08, -0.4781524, -0.95423794, 7.458809, 0.75)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Room1/Room Lights/cannon_base_yellow3" unique_id=997958862]
-transform = Transform3D(-0.9942412, -0.08562869, -0.06443728, -0.0669874, 0.9659258, -0.25000003, 0.0836488, -0.24424385, -0.96609926, 0, 0, 0)
+transform = Transform3D(-0.99424124, -0.106131054, -0.014853757, -0.06698741, 0.72367525, -0.68688196, 0.0836488, -0.6819313, -0.7266172, -0.11992663, 3.063829, 1.0281316)
 light_color = Color(0.23172906, 0.17009303, 0.038893547, 1)
-light_energy = 50.0
+light_energy = 60.0
 shadow_enabled = true
-spot_range = 18.654
+spot_range = 110.426
 spot_attenuation = 0.5
 
 [node name="CeilingLights" type="Node3D" parent="Room1/Room Lights" unique_id=774592533]
 
 [node name="pipe_straight_B_yellow3" parent="Room1/Room Lights/CeilingLights" unique_id=2050957968 instance=ExtResource("9_qvyah")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 5.5, 0.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.398752, 5.5, 0.5)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Room1/Room Lights/CeilingLights/pipe_straight_B_yellow3" unique_id=481642190]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 1.7674332, -4.371139e-08)
@@ -305,7 +308,7 @@ shadow_enabled = true
 spot_range = 15.0
 
 [node name="pipe_straight_B_yellow4" parent="Room1/Room Lights/CeilingLights" unique_id=824437006 instance=ExtResource("9_qvyah")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 5.5, -5.3213377)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.398752, 5.5, -5.3213377)
 
 [node name="SpotLight3D2" type="SpotLight3D" parent="Room1/Room Lights/CeilingLights/pipe_straight_B_yellow4" unique_id=1326342584]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 1.7674332, -0.07638936)
@@ -315,7 +318,7 @@ shadow_enabled = true
 spot_range = 15.0
 
 [node name="pipe_straight_B_yellow7" parent="Room1/Room Lights/CeilingLights" unique_id=278784501 instance=ExtResource("9_qvyah")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.110628, 5.5, 0.5227699)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5093803, 5.5, 0.5227699)
 
 [node name="SpotLight3D3" type="SpotLight3D" parent="Room1/Room Lights/CeilingLights/pipe_straight_B_yellow7" unique_id=430701859]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -8.889372, 1.7674332, -11.262333)
@@ -325,7 +328,7 @@ shadow_enabled = true
 spot_range = 15.0
 
 [node name="pipe_straight_B_yellow8" parent="Room1/Room Lights/CeilingLights" unique_id=305202719 instance=ExtResource("9_qvyah")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.110628, 5.5, -5.298568)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5093803, 5.5, -5.298568)
 
 [node name="SpotLight3D4" type="SpotLight3D" parent="Room1/Room Lights/CeilingLights/pipe_straight_B_yellow8" unique_id=1837606485]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0.12219429, 1.7674332, 5.798568)
@@ -335,7 +338,7 @@ shadow_enabled = true
 spot_range = 15.0
 
 [node name="pipe_straight_B_yellow5" parent="Room1/Room Lights/CeilingLights" unique_id=1362306804 instance=ExtResource("9_qvyah")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 5.5, -10.620576)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.398752, 5.5, -10.620576)
 
 [node name="SpotLight3D5" type="SpotLight3D" parent="Room1/Room Lights/CeilingLights/pipe_straight_B_yellow5" unique_id=1061613321]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 9.011566, 1.7674332, 5.222849)
@@ -345,7 +348,7 @@ shadow_enabled = true
 spot_range = 15.0
 
 [node name="pipe_straight_B_yellow6" parent="Room1/Room Lights/CeilingLights" unique_id=1698502825 instance=ExtResource("9_qvyah")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.080287, 5.5, -10.620576)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4790392, 5.5, -10.620576)
 
 [node name="SpotLight3D6" type="SpotLight3D" parent="Room1/Room Lights/CeilingLights/pipe_straight_B_yellow6" unique_id=1493020207]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0.09185314, 1.7674332, -0.11898713)
@@ -354,11 +357,12 @@ light_energy = 60.0
 shadow_enabled = true
 spot_range = 15.0
 
+[node name="LightSwitch" parent="Room1" unique_id=701599894 node_paths=PackedStringArray("roomLights") instance=ExtResource("20_wxwgo")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -14.908049, 3.3690963, 1.2514448)
+roomLights = NodePath("../Room Lights")
+
 [node name="Room2" type="Node3D" parent="." unique_id=71846326]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, 0)
-
-[node name="lever_wall_base_A_yellow2" parent="Room2" unique_id=16793284 instance=ExtResource("7_7fp03")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -14.936097, 3.9309912, 0.83709025)
 
 [node name="Wall - Floors" type="Node3D" parent="Room2" unique_id=1218518548]
 
@@ -637,11 +641,44 @@ spot_range = 15.0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.9929314, 6.007894, -10.075679)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Room2/Lights/Ceiling Lights/pipe_straight_B_yellow6" unique_id=1011948648]
-transform = Transform3D(0.9992981, 0.0030680283, -0.037334256, 0.037319258, 0.004808869, 0.99929184, 0.0032453933, -0.9999837, 0.0046909964, 0.02100972, 1.247843, 0.0031466212)
+transform = Transform3D(0.9992981, 0.0030680283, -0.037334256, 0.037319258, 0.004808869, 0.99929184, 0.0032453933, -0.9999837, 0.0046909964, -0.006454818, 1.9829612, 0.006597501)
 light_color = Color(0.37498263, 0.22644094, 0.023093808, 1)
 light_energy = 60.0
 shadow_enabled = true
-spot_range = 15.0
+spot_range = 21.163
+spot_angle = 50.59
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="Room2/Lights/Ceiling Lights/pipe_straight_B_yellow6" unique_id=656028077]
+transform = Transform3D(0.9992981, -0.007216477, -0.036758423, 0.037319258, 0.27679837, 0.96020305, 0.0032453942, -0.9609009, 0.27687347, -0.021103801, 1.9600002, 4.781242)
+light_color = Color(0.37498263, 0.22644094, 0.023093808, 1)
+light_energy = 120.0
+shadow_enabled = true
+spot_range = 10.632
+spot_angle = 50.59
+
+[node name="SpotLight3D3" type="SpotLight3D" parent="Room2/Lights/Ceiling Lights/pipe_straight_B_yellow6" unique_id=806018378]
+transform = Transform3D(0.9992981, -0.007216477, -0.036758423, 0.037319258, 0.27679837, 0.96020305, 0.0032453942, -0.9609009, 0.27687347, -6.900316, 1.7030928, 4.7589006)
+light_color = Color(0.37498263, 0.22644094, 0.023093808, 1)
+light_energy = 120.0
+shadow_enabled = true
+spot_range = 10.632
+spot_angle = 50.59
+
+[node name="SpotLight3D4" type="SpotLight3D" parent="Room2/Lights/Ceiling Lights/pipe_straight_B_yellow6" unique_id=770022859]
+transform = Transform3D(0.9992981, -0.007216477, -0.036758423, 0.037319258, 0.27679837, 0.96020305, 0.0032453942, -0.9609009, 0.27687347, -0.021403983, 2.4632792, -0.91361946)
+light_color = Color(0.37498263, 0.22644094, 0.023093808, 1)
+light_energy = 120.0
+shadow_enabled = true
+spot_range = 10.632
+spot_angle = 50.59
+
+[node name="SpotLight3D5" type="SpotLight3D" parent="Room2/Lights/Ceiling Lights/pipe_straight_B_yellow6" unique_id=875251288]
+transform = Transform3D(0.9992981, -0.007216477, -0.036758423, 0.037319258, 0.27679837, 0.96020305, 0.0032453942, -0.9609009, 0.27687347, -6.9006166, 2.2063718, -0.9359607)
+light_color = Color(0.37498263, 0.22644094, 0.023093808, 1)
+light_energy = 120.0
+shadow_enabled = true
+spot_range = 10.632
+spot_angle = 50.59
 
 [node name="Targets" type="Node3D" parent="Room2" unique_id=1998026523]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 0)
@@ -666,11 +703,12 @@ script = ExtResource("12_ue3l2")
 [node name="target_small7" parent="Room2/Targets" unique_id=450998868 instance=ExtResource("11_s26vl")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -23.01638, 1.625, -5.45)
 
+[node name="LightSwitch" parent="Room2" unique_id=1398379225 node_paths=PackedStringArray("roomLights") instance=ExtResource("20_wxwgo")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -14.910601, 3.3643985, 1.1239921)
+roomLights = NodePath("../Lights")
+
 [node name="Room3" type="Node3D" parent="." unique_id=815952682]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.940178, 0, 0)
-
-[node name="lever_wall_base_A_yellow2" parent="Room3" unique_id=516293414 instance=ExtResource("7_7fp03")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -14.936097, 3.9309912, 0.83709025)
 
 [node name="Wall - Floors" type="Node3D" parent="Room3" unique_id=199489524]
 
@@ -955,11 +993,12 @@ targetRPMs = 15.0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3621902, 4.592814, -11.860018)
 targetRPMs = 15.0
 
+[node name="LightSwitch" parent="Room3" unique_id=472641930 node_paths=PackedStringArray("roomLights") instance=ExtResource("20_wxwgo")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -14.87484, 3.3797398, 1.0254853)
+roomLights = NodePath("../Lights")
+
 [node name="Room4" type="Node3D" parent="." unique_id=1460238257]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -59.893864, 0, 0)
-
-[node name="lever_wall_base_A_yellow2" parent="Room4" unique_id=1197662330 instance=ExtResource("7_7fp03")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -14.936097, 3.9309912, 0.83709025)
 
 [node name="Wall - Floors" type="Node3D" parent="Room4" unique_id=2145226073]
 
@@ -1176,12 +1215,24 @@ transform = Transform3D(4.371139e-08, -3.821371e-15, 1, -8.742278e-08, -1, 0, 1,
 [node name="Lights" type="Node3D" parent="Room4" unique_id=1467877910]
 
 [node name="cannon_base_yellow4" parent="Room4/Lights" unique_id=1226236795 instance=ExtResource("8_xqk3i")]
-transform = Transform3D(-0.48296288, 0, 0.12940948, 0, 0.5, 0, -0.12940948, 0, -0.48296288, -13.75, 0.49351215, 0.75)
+transform = Transform3D(-0.45197412, 0, 0.21382087, 0, 0.5, 0, -0.21382087, 0, -0.45197412, -13.75, 0.49351215, 0.75)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Room4/Lights/cannon_base_yellow4" unique_id=1329235473]
 transform = Transform3D(-0.9675588, 0.14527196, 0.20670271, 0.1493685, 0.9887724, 0.004266495, -0.20376214, 0.035002958, -0.97839445, 0, 0, 0)
 light_color = Color(0.84488773, 0.5045405, 0.21292803, 1)
-light_energy = 4.387
+light_energy = 50.0
+shadow_enabled = true
+spot_range = 11.0
+spot_attenuation = 0.5
+spot_angle = 42.46
+
+[node name="cannon_base_yellow5" parent="Room4/Lights" unique_id=1562456014 instance=ExtResource("8_xqk3i")]
+transform = Transform3D(-0.4269843, 0, -0.26016212, 0, 0.5, 0, 0.26016212, 0, -0.4269843, -0.011008501, 0.63712597, 0.92837775)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Room4/Lights/cannon_base_yellow5" unique_id=1279825790]
+transform = Transform3D(-0.97765666, 0.17869884, -0.11069823, 0.17987841, 0.98368865, -0.0006800741, 0.10877104, -0.020577101, -0.99385375, 0, 0, 0)
+light_color = Color(0.84488773, 0.5045405, 0.21292803, 1)
+light_energy = 50.0
 shadow_enabled = true
 spot_range = 11.0
 spot_attenuation = 0.5
@@ -1237,6 +1288,10 @@ spot_angle = 59.15
 
 [node name="TargetSpawner" parent="Room4/Targets" unique_id=1005902443 instance=ExtResource("15_dcb65")]
 sceneToSpawn = ExtResource("16_p1ufb")
+
+[node name="LightSwitch" parent="Room4" unique_id=1174476558 node_paths=PackedStringArray("roomLights") instance=ExtResource("20_wxwgo")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -14.882153, 3.371118, 1.1527627)
+roomLights = NodePath("../Lights")
 
 [node name="Room5" type="Node3D" parent="." unique_id=1281601524]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -79.89386, 0, 0)
@@ -1513,6 +1568,38 @@ shadow_enabled = true
 spot_range = 15.0
 spot_angle = 59.15
 
+[node name="SpotLight3D2" type="SpotLight3D" parent="Room5/Lights" unique_id=472148811]
+transform = Transform3D(0.9992981, -0.007216477, -0.036758423, 0.037319258, 0.27679837, 0.96020305, 0.0032453942, -0.9609009, 0.27687347, -4.0607615, 6.7710586, -2.2669125)
+light_color = Color(0.37498263, 0.22644094, 0.023093808, 1)
+light_energy = 120.0
+shadow_enabled = true
+spot_range = 10.632
+spot_angle = 50.59
+
+[node name="SpotLight3D3" type="SpotLight3D" parent="Room5/Lights" unique_id=235524324]
+transform = Transform3D(0.9992981, -0.007216477, -0.036758423, 0.037319258, 0.27679837, 0.96020305, 0.0032453942, -0.9609009, 0.27687347, -10.939974, 6.514151, -2.2892537)
+light_color = Color(0.37498263, 0.22644094, 0.023093808, 1)
+light_energy = 120.0
+shadow_enabled = true
+spot_range = 10.632
+spot_angle = 50.59
+
+[node name="SpotLight3D4" type="SpotLight3D" parent="Room5/Lights" unique_id=1871756419]
+transform = Transform3D(0.9992981, -0.007216477, -0.036758423, 0.037319258, 0.27679837, 0.96020305, 0.0032453942, -0.9609009, 0.27687347, -4.0610614, 7.2743373, -7.961774)
+light_color = Color(0.37498263, 0.22644094, 0.023093808, 1)
+light_energy = 120.0
+shadow_enabled = true
+spot_range = 10.632
+spot_angle = 50.59
+
+[node name="SpotLight3D5" type="SpotLight3D" parent="Room5/Lights" unique_id=634588314]
+transform = Transform3D(0.9992981, -0.007216477, -0.036758423, 0.037319258, 0.27679837, 0.96020305, 0.0032453942, -0.9609009, 0.27687347, -10.940275, 7.017431, -7.984115)
+light_color = Color(0.37498263, 0.22644094, 0.023093808, 1)
+light_energy = 120.0
+shadow_enabled = true
+spot_range = 10.632
+spot_angle = 50.59
+
 [node name="Targets" type="Node3D" parent="Room5" unique_id=1264268295]
 
 [node name="MoleTubes" type="Node3D" parent="Room5" unique_id=404804939]
@@ -1546,9 +1633,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.9908295, 0.4638195, -10.11
 [node name="pipe_end_blue10" parent="Room5/MoleTubes" unique_id=1398004809 instance=ExtResource("14_p732e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9908295, 0.4638195, -10.112071)
 
-[node name="LightSwitch" parent="Room5" unique_id=701599894 node_paths=PackedStringArray("light") instance=ExtResource("20_wxwgo")]
+[node name="LightSwitch" parent="Room5" unique_id=2110808524 node_paths=PackedStringArray("roomLights") instance=ExtResource("20_wxwgo")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -14.880615, 3.385745, 1.2927654)
-light = NodePath("../Lights/Ceiling Lights/pipe_straight_B_yellow3/SpotLight3D")
+roomLights = NodePath("../Lights")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=307215412]
 environment = SubResource("Environment_s26vl")
@@ -2032,17 +2119,20 @@ light_energy = 60.0
 shadow_enabled = true
 spot_range = 15.0
 
-[node name="cannon_base_yellow4" parent="WalkWay/Lights" unique_id=781224317 instance=ExtResource("8_xqk3i")]
-transform = Transform3D(0.40543494, 0, -0.29261327, 0, 0.5, 0, 0.29261327, 0, 0.40543494, -24.31893, 0.49351215, 18.037153)
+[node name="LightSwitch" parent="WalkWay" unique_id=1962538932 node_paths=PackedStringArray("roomLights") instance=ExtResource("20_wxwgo")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 1.3809213e-08, 3.3344197, 18.652407)
+roomLights = NodePath("../Lights")
 
-[node name="SpotLight3D" type="SpotLight3D" parent="WalkWay/Lights/cannon_base_yellow4" unique_id=907788688]
-transform = Transform3D(-0.66892254, -0.7394882, -0.07549686, -0.36213624, 0.41289756, -0.8356871, 0.6491532, -0.53166986, -0.543992, -0.14954185, 3.2067661, 0.182724)
+[node name="cannon_base_yellow4" parent="WalkWay" unique_id=781224317 instance=ExtResource("8_xqk3i")]
+transform = Transform3D(0.3397975, 0, 0.36679378, 0, 0.5, 0, -0.3667938, 0, 0.33979747, -2.7086086, 0.48841572, 16.444138)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="WalkWay/cannon_base_yellow4" unique_id=907788688]
+transform = Transform3D(-0.9664015, 0.037484054, -0.25428963, 0.110604346, 0.95367706, -0.27976182, 0.23202345, -0.29848772, -0.9257809, -0.14954185, 3.2067661, 0.182724)
 light_color = Color(0.84488773, 0.5045405, 0.21292803, 1)
-light_energy = 100.0
+light_energy = 25.0
 shadow_enabled = true
-spot_range = 6.574
-spot_attenuation = 0.5
-spot_angle = 42.46
+spot_attenuation = 2.22
+spot_angle = 60.46
 
 [node name="QueFree\'er" parent="." unique_id=2046259190 instance=ExtResource("20_8ihw7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47.5, -5.5, 0)
