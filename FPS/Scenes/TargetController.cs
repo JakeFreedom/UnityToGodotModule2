@@ -25,19 +25,19 @@ public partial class TargetController : Node3D
 		
 	public override void _Process(double delta)
 	{
-		foreach(Node3D node in targets)
-		{
-			targetPosition = targetNodes[node];
-			if (node.Position.X <= targetPosition)
-			{
-                targetNodes[node] = rightSide;
-				node.Position = new Vector3(node.Position.X  +( (float)delta* targetSpeed), node.Position.Y, node.Position.Z);
-			}
-			else
-			{
-				targetNodes[node] = leftSide;
-				node.Position = new Vector3(node.Position.X - ((float)delta*targetSpeed), node.Position.Y, node.Position.Z);
-			}
-		}
+		//foreach(Node3D node in targets)
+		//{
+		//	targetPosition = targetNodes[node];
+		//	if (node.Position.X <= targetPosition)
+		//	{
+  //              targetNodes[node] = rightSide;
+		//		node.Position = new Vector3(node.Position.X  +( (float)delta* targetSpeed), node.Position.Y, node.Position.Z);
+		//	}
+		//	else
+		//	{
+		//		targetNodes[node] = leftSide;
+		//		node.Position = new Vector3(node.Position.X - ((float)delta*targetSpeed), node.Position.Y, node.Position.Z);
+		//	}
+		//}
 	}
 }

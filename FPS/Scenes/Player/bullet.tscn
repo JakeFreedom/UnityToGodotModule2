@@ -39,11 +39,11 @@ shadow_mesh = SubResource("ArrayMesh_nsdbj")
 [sub_resource type="SphereShape3D" id="SphereShape3D_eoc3h"]
 radius = 0.08
 
-[node name="Bullet" type="MeshInstance3D" unique_id=1017687417]
+[node name="Bullet" type="MeshInstance3D" unique_id=1017687417 groups=["Bullet"]]
 mesh = SubResource("ArrayMesh_fxbbb")
 script = ExtResource("1_eoc3h")
 
-[node name="BulletArea" type="Area3D" parent="." unique_id=157363106]
+[node name="BulletArea" type="Area3D" parent="." unique_id=157363106 groups=["Bullet"]]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BulletArea" unique_id=509363151]
 shape = SubResource("SphereShape3D_eoc3h")

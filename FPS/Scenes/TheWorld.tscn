@@ -12,21 +12,35 @@
 [ext_resource type="PackedScene" uid="uid://d3rmm5ab0ckft" path="res://Assets/AssetsNotUsed/SpaceBaseBits/terrain_low.gltf" id="10_neh8f"]
 [ext_resource type="PackedScene" uid="uid://c8ms1n7axpwd" path="res://Assets/AssetsNotUsed/Prototype/target_small.gltf" id="11_s26vl"]
 [ext_resource type="Script" uid="uid://c2emyp063dapw" path="res://Scenes/TargetController.cs" id="11_sfn7q"]
+[ext_resource type="Script" uid="uid://bjpvkox1vqdgp" path="res://Scenes/Room2.cs" id="12_rs2gg"]
 [ext_resource type="Script" uid="uid://8m0rphycuewt" path="res://Assets/AssetsNotUsed/Prototype/TargetSmall.cs" id="12_ue3l2"]
+[ext_resource type="Script" uid="uid://8vvtbnrihxun" path="res://TierSpawnRange.cs" id="13_x3gnk"]
 [ext_resource type="PackedScene" uid="uid://tcq8wqg23vpa" path="res://Assets/AssetsNotUsed/Platformer/pipe_end_blue.gltf" id="14_p732e"]
 [ext_resource type="PackedScene" uid="uid://bq22gdwbdxi7v" path="res://Scenes/spinning_target.tscn" id="14_ws0od"]
 [ext_resource type="PackedScene" uid="uid://chjicy8m5ifch" path="res://Scenes/target_spawner.tscn" id="15_dcb65"]
 [ext_resource type="PackedScene" uid="uid://b05r0slj45xvv" path="res://Scenes/verticle_moving_target.tscn" id="16_p1ufb"]
 [ext_resource type="Script" uid="uid://04ty5poaw5v2" path="res://Scenes/MoleSpawner.cs" id="17_8ihw7"]
+[ext_resource type="Script" uid="uid://dxvsne8j0aym4" path="res://Scenes/Room3.cs" id="17_j48sy"]
 [ext_resource type="PackedScene" uid="uid://caspsj0lk1m2e" path="res://Assets/AssetsNotUsed/Prototype/Locker_Decorated.gltf" id="17_ws0od"]
 [ext_resource type="PackedScene" uid="uid://gdg0sw3qy5k8" path="res://Scenes/mole_target.tscn" id="19_w7x0r"]
 [ext_resource type="PackedScene" uid="uid://dbd3tg5eiwr75" path="res://Scenes/que_free'er.tscn" id="20_8ihw7"]
 [ext_resource type="PackedScene" uid="uid://bfhbi6rig7wkm" path="res://SwitchLever.tscn" id="20_wxwgo"]
+[ext_resource type="PackedScene" uid="uid://id44f4hsu88q" path="res://Benny.tscn" id="23_xvxhc"]
+[ext_resource type="Script" uid="uid://c4p6xnm7on6tx" path="res://Scenes/BeenySpawnPoints.cs" id="26_aahxm"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7fp03"]
 
+[sub_resource type="Resource" id="Resource_aahxm"]
+script = ExtResource("13_x3gnk")
+MaxSpawnRange = -14
+metadata/_custom_type_script = "uid://8vvtbnrihxun"
+
+[sub_resource type="Resource" id="Resource_3r72n"]
+script = ExtResource("13_x3gnk")
+MaxSpawnRange = 14
+metadata/_custom_type_script = "uid://8vvtbnrihxun"
+
 [sub_resource type="Environment" id="Environment_s26vl"]
-background_mode = 2
 reflected_light_source = 2
 tonemap_mode = 4
 tonemap_exposure = 1.33
@@ -40,7 +54,6 @@ glow_hdr_luminance_cap = 21.1
 
 [node name="Roof" parent="." unique_id=425177874 instance=ExtResource("10_neh8f")]
 transform = Transform3D(100, 0, 0, 0, 0.5, 0, 0, 0, 100, -6.849585, 8.622515, -3.9674413)
-visible = false
 
 [node name="Lights" type="Node3D" parent="Roof" unique_id=380277833]
 
@@ -363,6 +376,9 @@ roomLights = NodePath("../Room Lights")
 
 [node name="Room2" type="Node3D" parent="." unique_id=71846326]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, 0)
+script = ExtResource("12_rs2gg")
+targetScene = ExtResource("11_s26vl")
+SpawnRange = SubResource("Resource_aahxm")
 
 [node name="Wall - Floors" type="Node3D" parent="Room2" unique_id=1218518548]
 
@@ -422,15 +438,6 @@ transform = Transform3D(6, 0, 0, 0, 1, 0, 0, 0, 1, -6.0114975, 0, 2.5724168)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Room2/Wall - Floors/Primitive_Beam2/StaticBody3D" unique_id=852528270]
 transform = Transform3D(4, 0, 0, 0, 1, 0, 0, 0, 1, 0.11903477, 1, 0)
 shape = SubResource("BoxShape3D_7fp03")
-
-[node name="Primitive_Beam3" parent="Room2/Wall - Floors" unique_id=1640268501 instance=ExtResource("2_2xt1t")]
-transform = Transform3D(4, 0, 0, 0, 2, 0, 0, 0, 1, -6.9259243, 0.5037751, -4.427583)
-
-[node name="Primitive_Beam4" parent="Room2/Wall - Floors" unique_id=1336224359 instance=ExtResource("2_2xt1t")]
-transform = Transform3D(4, 0, 0, 0, 2, 0, 0, 0, 1, -6.9259243, 1.5037751, -7.427583)
-
-[node name="Primitive_Beam5" parent="Room2/Wall - Floors" unique_id=902113519 instance=ExtResource("2_2xt1t")]
-transform = Transform3D(4, 0, 0, 0, 2, 0, 0, 0, 1, -6.9259243, 2.5037751, -12.427584)
 
 [node name="Floor_Prototype2" parent="Room2/Wall - Floors" unique_id=121981965 instance=ExtResource("3_54ym4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 5)
@@ -686,29 +693,51 @@ script = ExtResource("11_sfn7q")
 
 [node name="target_small3" parent="Room2/Targets" unique_id=377954676 instance=ExtResource("11_s26vl")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -20.368816, 3.8228621, -14.006567)
+visible = false
 
 [node name="target_small2" parent="Room2/Targets" unique_id=295409499 instance=ExtResource("11_s26vl")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -27.19527, 3.8228621, -14.006567)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -27.195, 3.823, -13)
+visible = false
 
 [node name="target_small4" parent="Room2/Targets" unique_id=1106945064 instance=ExtResource("11_s26vl")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -25.202036, 2.8720646, -9.022054)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -25.202, 3.5, -9.5)
+visible = false
 
 [node name="target_small5" parent="Room2/Targets" unique_id=721415414 instance=ExtResource("11_s26vl")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -32.02849, 2.8720646, -9.022054)
+visible = false
 
 [node name="target_small6" parent="Room2/Targets" unique_id=467313750 instance=ExtResource("11_s26vl")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -27.564693, 1.6251783, -5.4503284)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+visible = false
 script = ExtResource("12_ue3l2")
 
-[node name="target_small7" parent="Room2/Targets" unique_id=450998868 instance=ExtResource("11_s26vl")]
-transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -23.01638, 1.625, -5.45)
+[node name="SpawnOrigin" type="Node3D" parent="Room2/Targets" unique_id=1774855537]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 0, 0)
+
+[node name="target_small7" parent="Room2/Targets/SpawnOrigin" unique_id=450998868 instance=ExtResource("11_s26vl")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -14, 3.5, -12.5)
+visible = false
 
 [node name="LightSwitch" parent="Room2" unique_id=1398379225 node_paths=PackedStringArray("roomLights") instance=ExtResource("20_wxwgo")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -14.910601, 3.3643985, 1.1239921)
 roomLights = NodePath("../Lights")
 
+[node name="TargetOrigin" type="Node3D" parent="Room2" unique_id=974771277]
+
+[node name="Tier 1" parent="Room2/TargetOrigin" unique_id=1580969608 instance=ExtResource("2_2xt1t")]
+transform = Transform3D(4, 0, 0, 0, 2, 0, 0, 0, 1, -6.9259243, 0.5037751, -4.2180243)
+
+[node name="Tier 2" parent="Room2/TargetOrigin" unique_id=144487738 instance=ExtResource("2_2xt1t")]
+transform = Transform3D(4, 0, 0, 0, 2, 0, 0, 0, 1, -6.9259243, 1.5037751, -7.608819)
+
+[node name="Tier 3" parent="Room2/TargetOrigin" unique_id=1877294446 instance=ExtResource("2_2xt1t")]
+transform = Transform3D(4, 0, 0, 0, 2, 0, 0, 0, 1, -6.9259243, 2.5037751, -11.439462)
+
 [node name="Room3" type="Node3D" parent="." unique_id=815952682]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.940178, 0, 0)
+script = ExtResource("17_j48sy")
+SpawnRange = SubResource("Resource_3r72n")
 
 [node name="Wall - Floors" type="Node3D" parent="Room3" unique_id=199489524]
 
@@ -986,12 +1015,16 @@ spot_angle = 59.15
 
 [node name="SpinningTarget" parent="Room3/Targets" unique_id=1902651618 instance=ExtResource("14_ws0od")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.158657, 4.237, -4.944)
+visible = false
 targetMoveSpeed = 3.0
 targetRPMs = 15.0
 
 [node name="SpinningTarget2" parent="Room3/Targets" unique_id=1627615517 instance=ExtResource("14_ws0od")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3621902, 4.592814, -11.860018)
+visible = false
 targetRPMs = 15.0
+
+[node name="SpawnOrigin" type="Node3D" parent="Room3/Targets" unique_id=1408323628]
 
 [node name="LightSwitch" parent="Room3" unique_id=472641930 node_paths=PackedStringArray("roomLights") instance=ExtResource("20_wxwgo")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -14.87484, 3.3797398, 1.0254853)
@@ -1288,6 +1321,7 @@ spot_angle = 59.15
 
 [node name="TargetSpawner" parent="Room4/Targets" unique_id=1005902443 instance=ExtResource("15_dcb65")]
 sceneToSpawn = ExtResource("16_p1ufb")
+spawnedObjectTillBurst = 5
 
 [node name="LightSwitch" parent="Room4" unique_id=1174476558 node_paths=PackedStringArray("roomLights") instance=ExtResource("20_wxwgo")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -14.882153, 3.371118, 1.1527627)
@@ -2136,3 +2170,19 @@ spot_angle = 60.46
 
 [node name="QueFree\'er" parent="." unique_id=2046259190 instance=ExtResource("20_8ihw7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47.5, -5.5, 0)
+
+[node name="Benny" parent="." unique_id=366752987 instance=ExtResource("23_xvxhc")]
+transform = Transform3D(-0.8828328, 0, 0.46968734, 0, 1, 0, -0.46968734, 0, -0.8828328, -6.0576544, 0.6645746, 28.054321)
+
+[node name="BeenySpawnPoints" type="Node3D" parent="." unique_id=73986045]
+script = ExtResource("26_aahxm")
+bennyScene = ExtResource("23_xvxhc")
+
+[node name="Spawn1" type="Node3D" parent="BeenySpawnPoints" unique_id=1471467898]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -49.46333, 0, 10.16003)
+
+[node name="Spawn2" type="Node3D" parent="BeenySpawnPoints" unique_id=933817951]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.082882, 0, 6.1494923)
+
+[node name="Spawn3" type="Node3D" parent="BeenySpawnPoints" unique_id=1930140421]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -96.876816, 0, 6.1494923)

@@ -11,7 +11,7 @@ public partial class QueFreeer : Area3D
 
 	public void AreaEnteredHandler(Area3D otherArea)
 	{
-		GD.Print(otherArea.Name);
-		otherArea.Owner.QueueFree();
+		//GD.Print(otherArea.Name);
+		//otherArea.Owner.QueueFree();
 	}
 }

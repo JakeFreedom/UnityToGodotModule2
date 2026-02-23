@@ -5,6 +5,10 @@ using System.Linq;
 
 public partial class SwitchLever : Node3D
 {
+
+	[Signal]
+	public delegate void LightSwitchLeverEventHandler(bool isOn);
+
 	[Export] Node3D roomLights;
 
 	Area3D switchHitBox;
@@ -35,7 +39,6 @@ public partial class SwitchLever : Node3D
 		if(turnLightsOn && lightIndex < 16)
 			if(delayTime>=1)
 			{
-				GD.Print("Turn a bank of lights on");
 				delayTime = 0;
 				lightIndex += 1;
 			}
@@ -53,6 +56,8 @@ public partial class SwitchLever : Node3D
 				light.Visible = true;
 				turnLightsOn = true;
 			}
+
+			EmitSignal(SignalName.LightSwitchLever, true);
 			
 		}
 		else
@@ -61,8 +66,10 @@ public partial class SwitchLever : Node3D
 			switchLocation = false;
             
 			foreach (SpotLight3D light in lights)
-                light.Visible = false;        
-		}
+                light.Visible = false;
+
+            EmitSignal(SignalName.LightSwitchLever, false);
+        }
 
 	}
 
