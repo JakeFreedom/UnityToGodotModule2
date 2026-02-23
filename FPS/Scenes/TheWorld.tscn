@@ -25,6 +25,7 @@
 [ext_resource type="PackedScene" uid="uid://gdg0sw3qy5k8" path="res://Scenes/mole_target.tscn" id="19_w7x0r"]
 [ext_resource type="PackedScene" uid="uid://dbd3tg5eiwr75" path="res://Scenes/que_free'er.tscn" id="20_8ihw7"]
 [ext_resource type="PackedScene" uid="uid://bfhbi6rig7wkm" path="res://SwitchLever.tscn" id="20_wxwgo"]
+[ext_resource type="PackedScene" uid="uid://d2hrvqpjvmely" path="res://MoleTube.tscn" id="23_3r72n"]
 [ext_resource type="PackedScene" uid="uid://id44f4hsu88q" path="res://Benny.tscn" id="23_xvxhc"]
 [ext_resource type="Script" uid="uid://c4p6xnm7on6tx" path="res://Scenes/BeenySpawnPoints.cs" id="26_aahxm"]
 
@@ -54,10 +55,12 @@ glow_hdr_luminance_cap = 21.1
 
 [node name="Roof" parent="." unique_id=425177874 instance=ExtResource("10_neh8f")]
 transform = Transform3D(100, 0, 0, 0, 0.5, 0, 0, 0, 100, -6.849585, 8.622515, -3.9674413)
+visible = false
 
 [node name="Lights" type="Node3D" parent="Roof" unique_id=380277833]
 
 [node name="Room1" type="Node3D" parent="." unique_id=510552094]
+metadata/_edit_lock_ = true
 
 [node name="lever_wall_base_A_yellow2" parent="Room1" unique_id=2105539582 instance=ExtResource("7_7fp03")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -14.936097, 3.9309912, 0.83709025)
@@ -1640,32 +1643,55 @@ spot_angle = 50.59
 script = ExtResource("17_8ihw7")
 moleTarget = ExtResource("19_w7x0r")
 
-[node name="pipe_end_blue2" parent="Room5/MoleTubes" unique_id=721270628 instance=ExtResource("14_p732e")]
+[node name="MoleTubes" type="Node3D" parent="Room5/MoleTubes" unique_id=1734856280]
+
+[node name="MoleTube" parent="Room5/MoleTubes/MoleTubes" unique_id=1263104165 instance=ExtResource("23_3r72n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.06469, 0, -1.9889127)
+
+[node name="MoleTube2" parent="Room5/MoleTubes/MoleTubes" unique_id=1943036881 instance=ExtResource("23_3r72n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.043709, 0, -1.9889127)
+
+[node name="MoleTube3" parent="Room5/MoleTubes/MoleTubes" unique_id=2127376998 instance=ExtResource("23_3r72n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0055237, 0, -1.9889127)
+
+[node name="OldTubes" type="Node3D" parent="Room5/MoleTubes" unique_id=240528501]
+visible = false
+
+[node name="pipe_end_blue2" parent="Room5/MoleTubes/OldTubes" unique_id=721270628 instance=ExtResource("14_p732e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.990829, 0.4638195, -2.112071)
+visible = false
 
-[node name="pipe_end_blue3" parent="Room5/MoleTubes" unique_id=1922999076 instance=ExtResource("14_p732e")]
+[node name="pipe_end_blue3" parent="Room5/MoleTubes/OldTubes" unique_id=1922999076 instance=ExtResource("14_p732e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.9908295, 0.4638195, -2.112071)
+visible = false
 
-[node name="pipe_end_blue4" parent="Room5/MoleTubes" unique_id=1786120043 instance=ExtResource("14_p732e")]
+[node name="pipe_end_blue4" parent="Room5/MoleTubes/OldTubes" unique_id=1786120043 instance=ExtResource("14_p732e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9908295, 0.4638195, -2.112071)
+visible = false
 
-[node name="pipe_end_blue5" parent="Room5/MoleTubes" unique_id=444811684 instance=ExtResource("14_p732e")]
+[node name="pipe_end_blue5" parent="Room5/MoleTubes/OldTubes" unique_id=444811684 instance=ExtResource("14_p732e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.990829, 0.4638195, -6.112071)
+visible = false
 
-[node name="pipe_end_blue6" parent="Room5/MoleTubes" unique_id=1660476263 instance=ExtResource("14_p732e")]
+[node name="pipe_end_blue6" parent="Room5/MoleTubes/OldTubes" unique_id=1660476263 instance=ExtResource("14_p732e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.9908295, 0.4638195, -6.112071)
+visible = false
 
-[node name="pipe_end_blue7" parent="Room5/MoleTubes" unique_id=303836640 instance=ExtResource("14_p732e")]
+[node name="pipe_end_blue7" parent="Room5/MoleTubes/OldTubes" unique_id=303836640 instance=ExtResource("14_p732e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9908295, 0.4638195, -6.112071)
+visible = false
 
-[node name="pipe_end_blue8" parent="Room5/MoleTubes" unique_id=1774958903 instance=ExtResource("14_p732e")]
+[node name="pipe_end_blue8" parent="Room5/MoleTubes/OldTubes" unique_id=1774958903 instance=ExtResource("14_p732e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.990829, 0.4638195, -10.112071)
+visible = false
 
-[node name="pipe_end_blue9" parent="Room5/MoleTubes" unique_id=34208695 instance=ExtResource("14_p732e")]
+[node name="pipe_end_blue9" parent="Room5/MoleTubes/OldTubes" unique_id=34208695 instance=ExtResource("14_p732e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.9908295, 0.4638195, -10.112071)
+visible = false
 
-[node name="pipe_end_blue10" parent="Room5/MoleTubes" unique_id=1398004809 instance=ExtResource("14_p732e")]
+[node name="pipe_end_blue10" parent="Room5/MoleTubes/OldTubes" unique_id=1398004809 instance=ExtResource("14_p732e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9908295, 0.4638195, -10.112071)
+visible = false
 
 [node name="LightSwitch" parent="Room5" unique_id=2110808524 node_paths=PackedStringArray("roomLights") instance=ExtResource("20_wxwgo")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -14.880615, 3.385745, 1.2927654)
