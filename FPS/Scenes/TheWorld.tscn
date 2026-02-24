@@ -55,7 +55,6 @@ glow_hdr_luminance_cap = 21.1
 
 [node name="Roof" parent="." unique_id=425177874 instance=ExtResource("10_neh8f")]
 transform = Transform3D(100, 0, 0, 0, 0.5, 0, 0, 0, 100, -6.849585, 8.622515, -3.9674413)
-visible = false
 
 [node name="Lights" type="Node3D" parent="Roof" unique_id=380277833]
 

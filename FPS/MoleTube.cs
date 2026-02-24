@@ -14,7 +14,8 @@ public partial class MoleTube : Node3D
 		GetNode<Area3D>("Area3D").AreaEntered += AreaEnteredHandler;
 	}
 
-	public void Launch() =>	isActive = true;
+	public void SetActive() =>	isActive = true;
+	public void Deactivate() => isActive = false;
 	public void SetMoleTargetScene(PackedScene scene) =>  moleTargetScene = scene; 
 	public Boolean IsActive { get=>isActive; }
 	private void AreaEnteredHandler(Area3D otherArea) => isActive = false;

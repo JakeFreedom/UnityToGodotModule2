@@ -1,4 +1,5 @@
 using Godot;
+using Microsoft.VisualBasic;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,9 +7,8 @@ using System.Linq;
 
 public partial class MoleSpawnController : Node3D
 {
-
 	[Export] PackedScene moleScene;
-	[Export] float timeBetweenSpawns = 5;
+	[Export] float timeBetweenSpawns = 2;
 
 	List<MoleTube> moleTubeList;
 	List<MoleTarget> moleTargetsToTrack;
@@ -25,22 +25,19 @@ public partial class MoleSpawnController : Node3D
 		spawnTimer.Autostart = true;
 		spawnTimer.WaitTime = timeBetweenSpawns;
 		spawnTimer.Timeout += SpawnTimer_TimeOut;
-		//spawnTimer.Paused = isRoomActive;
+		spawnTimer.Paused = !isRoomActive;
 		spawnTimer.Start();
 		moleTubeList = new List<MoleTube>();
 		//Get a list of all the Tubes in the scene
 		for(int i = 0; i < GetChildCount(); i++)
 			moleTubeList.Add(GetChild<MoleTube>(i));
 
-		//Find the light switch
+
 		SwitchLever t = GetNode<SwitchLever>("../../LightSwitch");
 		t.LightSwitchLever += LightSwitchLeverHandler;
-		GD.Print(t.Name);
 		AddChild(spawnTimer);
 	}
 
-	
-	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
 		if (isRoomActive)
@@ -63,12 +60,7 @@ public partial class MoleSpawnController : Node3D
 		}
 	}
 
-	private void LightSwitchLeverHandler(bool isRoomActive)
-	{
-		GD.Print(isRoomActive);
-		this.isRoomActive = isRoomActive;
-		//spawnTimer.Paused = !isRoomActive;
-	}
+	private void LightSwitchLeverHandler(bool isRoomActive) { this.isRoomActive = isRoomActive; spawnTimer.Paused = !isRoomActive; }
 	private void SpawnTimer_TimeOut() 
 	{
 		//Get a random tube that isn't in use
@@ -78,20 +70,20 @@ public partial class MoleSpawnController : Node3D
 			activeTube = availTubes[rng.RandiRange(0, availTubes.Count - 1)];
 			MoleTarget moleTarget = moleScene.Instantiate<MoleTarget>();
 			activeTube.AddChild(moleTarget);
-			activeTube.Launch();//<--This just sets the tube to active
+			activeTube.SetActive();
 			moleTarget.Position = new Vector3(0, 0, 0);
 			moleTarget.MoleTargerQueFree += MoleTargetQueFreeHandler;
 			moleTarget.MaxHeight = activeTube.MaxHeight;
+			moleTarget.myTube = activeTube;
 			moleTargetsToTrack.Add(moleTarget);
 		}
 	}
 
-
-	private void MoleTargetQueFreeHandler(MoleTarget mt)
+	private void MoleTargetQueFreeHandler(MoleTarget mt) 
 	{
-		GD.Print("Sometime removed");
-		//CallDeferred("moleTargetsToTrack.Remove", mt);
-		moleTargetsToTrack.Remove(mt);
-
+		mt.StartDeathTimer();
+		mt.myTube.Deactivate();
+		moleTargetsToTrack.Remove(mt); 
+	
 	}
 }
