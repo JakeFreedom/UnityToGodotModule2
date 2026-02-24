@@ -3,60 +3,20 @@
   "WorkspaceRootPath": "F:\\Repos\\UnityToGodotModule2\\FPS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{635DC408-7ABE-4258-88A3-900E04DB796C}|FPS.csproj|f:\\repos\\unitytogodotmodule2\\fps\\targetspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{635DC408-7ABE-4258-88A3-900E04DB796C}|FPS.csproj|solutionrelative:targetspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{635DC408-7ABE-4258-88A3-900E04DB796C}|FPS.csproj|f:\\repos\\unitytogodotmodule2\\fps\\scenes\\quefreeer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{635DC408-7ABE-4258-88A3-900E04DB796C}|FPS.csproj|solutionrelative:scenes\\quefreeer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{635DC408-7ABE-4258-88A3-900E04DB796C}|FPS.csproj|f:\\repos\\unitytogodotmodule2\\fps\\scenes\\verticlemovingtarget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{635DC408-7ABE-4258-88A3-900E04DB796C}|FPS.csproj|solutionrelative:scenes\\verticlemovingtarget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Repos\\UnityToGodotModule2\\FPS\\Scenes\\Room3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Scenes\\Room3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{635DC408-7ABE-4258-88A3-900E04DB796C}|FPS.csproj|f:\\repos\\unitytogodotmodule2\\fps\\scenes\\player\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{635DC408-7ABE-4258-88A3-900E04DB796C}|FPS.csproj|solutionrelative:scenes\\player\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{635DC408-7ABE-4258-88A3-900E04DB796C}|FPS.csproj|f:\\repos\\unitytogodotmodule2\\fps\\scenes\\playerweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{635DC408-7ABE-4258-88A3-900E04DB796C}|FPS.csproj|solutionrelative:scenes\\playerweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{635DC408-7ABE-4258-88A3-900E04DB796C}|FPS.csproj|f:\\repos\\unitytogodotmodule2\\fps\\assets\\assetsnotused\\prototype\\targetsmall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{635DC408-7ABE-4258-88A3-900E04DB796C}|FPS.csproj|solutionrelative:assets\\assetsnotused\\prototype\\targetsmall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Repos\\UnityToGodotModule2\\FPS\\Scenes\\Room2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Scenes\\Room2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Repos\\UnityToGodotModule2\\FPS\\Scenes\\MoleSpawnController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Scenes\\MoleSpawnController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{635DC408-7ABE-4258-88A3-900E04DB796C}|FPS.csproj|f:\\repos\\unitytogodotmodule2\\fps\\switchlever.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{635DC408-7ABE-4258-88A3-900E04DB796C}|FPS.csproj|solutionrelative:switchlever.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{635DC408-7ABE-4258-88A3-900E04DB796C}|FPS.csproj|f:\\repos\\unitytogodotmodule2\\fps\\scenes\\targetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{635DC408-7ABE-4258-88A3-900E04DB796C}|FPS.csproj|solutionrelative:scenes\\targetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{635DC408-7ABE-4258-88A3-900E04DB796C}|FPS.csproj|f:\\repos\\unitytogodotmodule2\\fps\\scenes\\moletarget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{635DC408-7ABE-4258-88A3-900E04DB796C}|FPS.csproj|solutionrelative:scenes\\moletarget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{635DC408-7ABE-4258-88A3-900E04DB796C}|FPS.csproj|f:\\repos\\unitytogodotmodule2\\fps\\benny.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{635DC408-7ABE-4258-88A3-900E04DB796C}|FPS.csproj|solutionrelative:benny.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{635DC408-7ABE-4258-88A3-900E04DB796C}|FPS.csproj|f:\\repos\\unitytogodotmodule2\\fps\\tierspawnrange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{635DC408-7ABE-4258-88A3-900E04DB796C}|FPS.csproj|solutionrelative:tierspawnrange.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Repos\\UnityToGodotModule2\\FPS\\BennyHitBox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BennyHitBox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{635DC408-7ABE-4258-88A3-900E04DB796C}|FPS.csproj|f:\\repos\\unitytogodotmodule2\\fps\\scenes\\player\\palyer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{635DC408-7ABE-4258-88A3-900E04DB796C}|FPS.csproj|solutionrelative:scenes\\player\\palyer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\Repos\\UnityToGodotModule2\\FPS\\MoleTube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MoleTube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,189 +26,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "QueFreeer.cs",
-              "DocumentMoniker": "F:\\Repos\\UnityToGodotModule2\\FPS\\Scenes\\QueFreeer.cs",
-              "RelativeDocumentMoniker": "Scenes\\QueFreeer.cs",
-              "ToolTip": "F:\\Repos\\UnityToGodotModule2\\FPS\\Scenes\\QueFreeer.cs",
-              "RelativeToolTip": "Scenes\\QueFreeer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-22T21:20:37.215Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "VerticleMovingTarget.cs",
-              "DocumentMoniker": "F:\\Repos\\UnityToGodotModule2\\FPS\\Scenes\\VerticleMovingTarget.cs",
-              "RelativeDocumentMoniker": "Scenes\\VerticleMovingTarget.cs",
-              "ToolTip": "F:\\Repos\\UnityToGodotModule2\\FPS\\Scenes\\VerticleMovingTarget.cs",
-              "RelativeToolTip": "Scenes\\VerticleMovingTarget.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-22T20:32:34.138Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Room3.cs",
-              "DocumentMoniker": "F:\\Repos\\UnityToGodotModule2\\FPS\\Scenes\\Room3.cs",
-              "RelativeDocumentMoniker": "Scenes\\Room3.cs",
-              "ToolTip": "F:\\Repos\\UnityToGodotModule2\\FPS\\Scenes\\Room3.cs",
-              "RelativeToolTip": "Scenes\\Room3.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-22T20:17:04.256Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Bullet.cs",
-              "DocumentMoniker": "F:\\Repos\\UnityToGodotModule2\\FPS\\Scenes\\Player\\Bullet.cs",
-              "RelativeDocumentMoniker": "Scenes\\Player\\Bullet.cs",
-              "ToolTip": "F:\\Repos\\UnityToGodotModule2\\FPS\\Scenes\\Player\\Bullet.cs",
-              "RelativeToolTip": "Scenes\\Player\\Bullet.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-22T18:44:43.548Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PlayerWeapon.cs",
-              "DocumentMoniker": "F:\\Repos\\UnityToGodotModule2\\FPS\\Scenes\\PlayerWeapon.cs",
-              "RelativeDocumentMoniker": "Scenes\\PlayerWeapon.cs",
-              "ToolTip": "F:\\Repos\\UnityToGodotModule2\\FPS\\Scenes\\PlayerWeapon.cs",
-              "RelativeToolTip": "Scenes\\PlayerWeapon.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-22T18:44:25.587Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TargetSmall.cs",
-              "DocumentMoniker": "F:\\Repos\\UnityToGodotModule2\\FPS\\Assets\\AssetsNotUsed\\Prototype\\TargetSmall.cs",
-              "RelativeDocumentMoniker": "Assets\\AssetsNotUsed\\Prototype\\TargetSmall.cs",
-              "ToolTip": "F:\\Repos\\UnityToGodotModule2\\FPS\\Assets\\AssetsNotUsed\\Prototype\\TargetSmall.cs",
-              "RelativeToolTip": "Assets\\AssetsNotUsed\\Prototype\\TargetSmall.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-22T17:01:30.223Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "TargetController.cs",
-              "DocumentMoniker": "F:\\Repos\\UnityToGodotModule2\\FPS\\Scenes\\TargetController.cs",
-              "RelativeDocumentMoniker": "Scenes\\TargetController.cs",
-              "ToolTip": "F:\\Repos\\UnityToGodotModule2\\FPS\\Scenes\\TargetController.cs",
-              "RelativeToolTip": "Scenes\\TargetController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T00:27:24.023Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Room2.cs",
-              "DocumentMoniker": "F:\\Repos\\UnityToGodotModule2\\FPS\\Scenes\\Room2.cs",
-              "RelativeDocumentMoniker": "Scenes\\Room2.cs",
-              "ToolTip": "F:\\Repos\\UnityToGodotModule2\\FPS\\Scenes\\Room2.cs",
-              "RelativeToolTip": "Scenes\\Room2.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAmwH8AAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-21T20:23:37.993Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "TierSpawnRange.cs",
-              "DocumentMoniker": "F:\\Repos\\UnityToGodotModule2\\FPS\\TierSpawnRange.cs",
-              "RelativeDocumentMoniker": "TierSpawnRange.cs",
-              "ToolTip": "F:\\Repos\\UnityToGodotModule2\\FPS\\TierSpawnRange.cs",
-              "RelativeToolTip": "TierSpawnRange.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-21T22:35:42.493Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Benny.cs",
-              "DocumentMoniker": "F:\\Repos\\UnityToGodotModule2\\FPS\\Benny.cs",
-              "RelativeDocumentMoniker": "Benny.cs",
-              "ToolTip": "F:\\Repos\\UnityToGodotModule2\\FPS\\Benny.cs",
-              "RelativeToolTip": "Benny.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAgwFIAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-21T19:05:57.233Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TargetSpawner.cs",
-              "DocumentMoniker": "F:\\Repos\\UnityToGodotModule2\\FPS\\TargetSpawner.cs",
-              "RelativeDocumentMoniker": "TargetSpawner.cs",
-              "ToolTip": "F:\\Repos\\UnityToGodotModule2\\FPS\\TargetSpawner.cs",
-              "RelativeToolTip": "TargetSpawner.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAIwEsAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T00:26:19.85Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "BennyHitBox.cs",
-              "DocumentMoniker": "F:\\Repos\\UnityToGodotModule2\\FPS\\BennyHitBox.cs",
-              "RelativeDocumentMoniker": "BennyHitBox.cs",
-              "ToolTip": "F:\\Repos\\UnityToGodotModule2\\FPS\\BennyHitBox.cs",
-              "RelativeToolTip": "BennyHitBox.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-21T19:45:49.5Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Palyer.cs",
-              "DocumentMoniker": "F:\\Repos\\UnityToGodotModule2\\FPS\\Scenes\\Player\\Palyer.cs",
-              "RelativeDocumentMoniker": "Scenes\\Player\\Palyer.cs",
-              "ToolTip": "F:\\Repos\\UnityToGodotModule2\\FPS\\Scenes\\Player\\Palyer.cs",
-              "RelativeToolTip": "Scenes\\Player\\Palyer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-21T19:20:16.258Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "SwitchLever.cs",
               "DocumentMoniker": "F:\\Repos\\UnityToGodotModule2\\FPS\\SwitchLever.cs",
               "RelativeDocumentMoniker": "SwitchLever.cs",
               "ToolTip": "F:\\Repos\\UnityToGodotModule2\\FPS\\SwitchLever.cs",
               "RelativeToolTip": "SwitchLever.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAgwEYAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAA1wBUAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T00:45:02.739Z",
+              "WhenOpened": "2026-02-24T04:05:24.836Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MoleTarget.cs",
+              "DocumentMoniker": "F:\\Repos\\UnityToGodotModule2\\FPS\\Scenes\\MoleTarget.cs",
+              "RelativeDocumentMoniker": "Scenes\\MoleTarget.cs",
+              "ToolTip": "F:\\Repos\\UnityToGodotModule2\\FPS\\Scenes\\MoleTarget.cs",
+              "RelativeToolTip": "Scenes\\MoleTarget.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T01:59:02.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MoleTube.cs",
+              "DocumentMoniker": "F:\\Repos\\UnityToGodotModule2\\FPS\\MoleTube.cs",
+              "RelativeDocumentMoniker": "MoleTube.cs",
+              "ToolTip": "F:\\Repos\\UnityToGodotModule2\\FPS\\MoleTube.cs",
+              "RelativeToolTip": "MoleTube.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T00:39:48.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MoleSpawnController.cs",
+              "DocumentMoniker": "F:\\Repos\\UnityToGodotModule2\\FPS\\Scenes\\MoleSpawnController.cs",
+              "RelativeDocumentMoniker": "Scenes\\MoleSpawnController.cs",
+              "ToolTip": "F:\\Repos\\UnityToGodotModule2\\FPS\\Scenes\\MoleSpawnController.cs",
+              "RelativeToolTip": "Scenes\\MoleSpawnController.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAIwFwAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T00:14:42.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }

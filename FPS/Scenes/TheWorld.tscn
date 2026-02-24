@@ -19,12 +19,12 @@
 [ext_resource type="PackedScene" uid="uid://bq22gdwbdxi7v" path="res://Scenes/spinning_target.tscn" id="14_ws0od"]
 [ext_resource type="PackedScene" uid="uid://chjicy8m5ifch" path="res://Scenes/target_spawner.tscn" id="15_dcb65"]
 [ext_resource type="PackedScene" uid="uid://b05r0slj45xvv" path="res://Scenes/verticle_moving_target.tscn" id="16_p1ufb"]
-[ext_resource type="Script" uid="uid://04ty5poaw5v2" path="res://Scenes/MoleSpawner.cs" id="17_8ihw7"]
 [ext_resource type="Script" uid="uid://dxvsne8j0aym4" path="res://Scenes/Room3.cs" id="17_j48sy"]
 [ext_resource type="PackedScene" uid="uid://caspsj0lk1m2e" path="res://Assets/AssetsNotUsed/Prototype/Locker_Decorated.gltf" id="17_ws0od"]
-[ext_resource type="PackedScene" uid="uid://gdg0sw3qy5k8" path="res://Scenes/mole_target.tscn" id="19_w7x0r"]
 [ext_resource type="PackedScene" uid="uid://dbd3tg5eiwr75" path="res://Scenes/que_free'er.tscn" id="20_8ihw7"]
 [ext_resource type="PackedScene" uid="uid://bfhbi6rig7wkm" path="res://SwitchLever.tscn" id="20_wxwgo"]
+[ext_resource type="Script" uid="uid://dgc0t5rt6dxxc" path="res://Scenes/MoleSpawnController.cs" id="21_j48sy"]
+[ext_resource type="PackedScene" uid="uid://bo7lgs2wt5u2o" path="res://Scenes/MoleTarget.tscn" id="22_3r72n"]
 [ext_resource type="PackedScene" uid="uid://d2hrvqpjvmely" path="res://MoleTube.tscn" id="23_3r72n"]
 [ext_resource type="PackedScene" uid="uid://id44f4hsu88q" path="res://Benny.tscn" id="23_xvxhc"]
 [ext_resource type="Script" uid="uid://c4p6xnm7on6tx" path="res://Scenes/BeenySpawnPoints.cs" id="26_aahxm"]
@@ -1640,19 +1640,46 @@ spot_angle = 50.59
 [node name="Targets" type="Node3D" parent="Room5" unique_id=1264268295]
 
 [node name="MoleTubes" type="Node3D" parent="Room5" unique_id=404804939]
-script = ExtResource("17_8ihw7")
-moleTarget = ExtResource("19_w7x0r")
 
-[node name="MoleTubes" type="Node3D" parent="Room5/MoleTubes" unique_id=1734856280]
+[node name="NewMoleTubes" type="Node3D" parent="Room5/MoleTubes" unique_id=1734856280]
+script = ExtResource("21_j48sy")
+moleScene = ExtResource("22_3r72n")
 
-[node name="MoleTube" parent="Room5/MoleTubes/MoleTubes" unique_id=1263104165 instance=ExtResource("23_3r72n")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.06469, 0, -1.9889127)
+[node name="MoleTube1" parent="Room5/MoleTubes/NewMoleTubes" unique_id=1263104165 instance=ExtResource("23_3r72n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.06469, 0.44333553, -1.9889127)
+MaxHeight = 3
 
-[node name="MoleTube2" parent="Room5/MoleTubes/MoleTubes" unique_id=1943036881 instance=ExtResource("23_3r72n")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.043709, 0, -1.9889127)
+[node name="MoleTube2" parent="Room5/MoleTubes/NewMoleTubes" unique_id=1943036881 instance=ExtResource("23_3r72n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.043709, 0.44333553, -1.9889127)
+MaxHeight = 3
 
-[node name="MoleTube3" parent="Room5/MoleTubes/MoleTubes" unique_id=2127376998 instance=ExtResource("23_3r72n")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0055237, 0, -1.9889127)
+[node name="MoleTube3" parent="Room5/MoleTubes/NewMoleTubes" unique_id=2127376998 instance=ExtResource("23_3r72n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0055237, 0.44333553, -1.9889127)
+MaxHeight = 3
+
+[node name="MoleTube4" parent="Room5/MoleTubes/NewMoleTubes" unique_id=1069864621 instance=ExtResource("23_3r72n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.06469, 0.44333553, -6.0094805)
+MaxHeight = 4
+
+[node name="MoleTube5" parent="Room5/MoleTubes/NewMoleTubes" unique_id=1816497371 instance=ExtResource("23_3r72n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.043709, 0.44333553, -6.0094805)
+MaxHeight = 4
+
+[node name="MoleTube6" parent="Room5/MoleTubes/NewMoleTubes" unique_id=612606198 instance=ExtResource("23_3r72n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0055237, 0.44333553, -6.0094805)
+MaxHeight = 4
+
+[node name="MoleTube7" parent="Room5/MoleTubes/NewMoleTubes" unique_id=986746525 instance=ExtResource("23_3r72n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.06469, 0.44333553, -10.00496)
+MaxHeight = 5
+
+[node name="MoleTube8" parent="Room5/MoleTubes/NewMoleTubes" unique_id=1799210242 instance=ExtResource("23_3r72n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.043709, 0.44333553, -10.00496)
+MaxHeight = 5
+
+[node name="MoleTube9" parent="Room5/MoleTubes/NewMoleTubes" unique_id=1883659344 instance=ExtResource("23_3r72n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.0055237, 0.44333553, -10.00496)
+MaxHeight = 5
 
 [node name="OldTubes" type="Node3D" parent="Room5/MoleTubes" unique_id=240528501]
 visible = false
@@ -1693,8 +1720,8 @@ visible = false
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9908295, 0.4638195, -10.112071)
 visible = false
 
-[node name="LightSwitch" parent="Room5" unique_id=2110808524 node_paths=PackedStringArray("roomLights") instance=ExtResource("20_wxwgo")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -14.880615, 3.385745, 1.2927654)
+[node name="LightSwitch" parent="Room5" unique_id=1555673991 node_paths=PackedStringArray("roomLights") instance=ExtResource("20_wxwgo")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -14.885147, 3.232851, 1.2936754)
 roomLights = NodePath("../Lights")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=307215412]
